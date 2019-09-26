@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Customers</title>
+    <style type="text/css">
+        h3{background-color: chocolate;color: aliceblue;padding: 10px 0px 10px 20px;}
+        footer{margin: 10px 0;}
+
+        #customers{
+            font-family:"Trebuchet MS",Consolas,Arial,sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        #customers td, #customers th{
+            border: 1px solid #dddddd;
+            padding: 9px;
+        }
+        #customers tr:nth-child(odd){
+            background-color: dodgerblue;
+        }
+        #customers th{
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: grey;
+            color: whitesmoke;
+        }
+        input[type=text],input[type=email]{
+            width: 100%;
+            padding: 12px 0px;
+            margin: 8px 0;
+            display: flex;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit]{
+            width: 300px;
+            background-color: aquamarine;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+        input[type=submit]:hover{
+            background-color: #dddddd;
+            padding: 20px;
+        }
+        #form{
+            width: 500px;
+            border-radius: 4px;
+            background-color: palevioletred;
+            padding: 20px;
+        }
+
+        .notify span{font-size: 15px; color: chartreuse}
+    </style>
+</head>
+<body>
+<footer th:fragment="footer"></footer>
+    &copy;2019 MinhDien
+
+</body>
+</html>
